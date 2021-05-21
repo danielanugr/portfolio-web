@@ -34,21 +34,21 @@ export default function Navbar () {
             </NavLink>
             <NavLink
               to='/post'
-              activeClassName='text-red-700'
+              activeClassName='text-red-500'
               className='inline-flex items-center py-3 px-3 my-6 rounded text-white origin-top-left hover:transform-gpu hover:rotate-12 transition duration-600'
             >
               Blog
             </NavLink>
             <NavLink
               to='/portfolio'
-              activeClassName='text-red-700'
+              activeClassName='text-red-500'
               className='inline-flex items-center py-3 px-3 my-6 rounded text-white origin-top-left hover:transform-gpu hover:rotate-12 transition duration-600'
             >
               Portfolios
             </NavLink>
             <NavLink
               to='/about'
-              activeClassName='text-red-700'
+              activeClassName='text-red-500'
               className='inline-flex items-center py-3 px-3 my-6 rounded text-white origin-top-left hover:transform-gpu hover:rotate-12 transition duration-600'
               onClick={e => handleAbout(e)}
             >

@@ -1,6 +1,7 @@
 import React from 'react'
 import { SocialIcon } from 'react-social-icons'
 import image from '../web-bg.png'
+import Typed from '../components/Typed'
 
 export default function Home () {
   return (
@@ -19,7 +20,15 @@ export default function Home () {
             <h2 className='text-4xl text-white spartan leading-none lg:leading-snug home-name'>
               I'm a{' '}
               <span className='text-4xl text-red-400 spartan leading-none lg:leading-snug home-name'>
-                Full Stack Developer
+                <Typed
+                  strings={[
+                    'Gamer.^1000',
+                    'Pianist.^1000',
+                    'Weeaboo?^1000',
+                    'Learner.^1000',
+                    'Full Stack Developer.'
+                  ]}
+                />
               </span>
             </h2>
           </div>

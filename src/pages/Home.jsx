@@ -11,7 +11,7 @@ export default function Home () {
           alt={`Navy background with logo on right corner`}
           className='absolute top-0 object-cover w-screen h-screen'
         />
-        <section className='absolute inset-0 border-red-400 border-4 flex flex-col justify-center items-center min-h-screen pt-12 lg:pt-12 px-8'>
+        <section className='absolute inset-0 flex flex-col justify-center items-center min-h-screen pt-12 lg:pt-12 px-8'>
           <h1 className='text-6xl text-white spartan leading-none lg:leading-snug home-name'>
             Daniel Adhi Nugraha
           </h1>

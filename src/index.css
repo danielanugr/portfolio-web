@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url("https://id.allfont.net/allfont.css?fonts=league-spartan");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.cursive {
-  font-family: "Amatic SC", cursive;
+.spartan {
+  font-family: "League Spartan Bold", arial;
   font-weight: 700;
 }
 
@@ -16,4 +16,31 @@
 
 .home-hame {
   font-size: 150px
+}
+
+.title:hover{
+  animation: shake 0.6s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0px,0px) rotate(0deg);
+    
+  }
+  25% {
+    transform: translate(1px,1px) rotate(1deg);
+
+  }
+  50% {
+    transform: translate(-1px,-1px) rotate(-1deg);
+
+  }
+  75% {
+    transform: translate(2px, -1px) rotate(2deg);
+
+  }
+  100% {
+    transform: translate(-1px,1px) rotate(-1deg);
+
+  }
 }

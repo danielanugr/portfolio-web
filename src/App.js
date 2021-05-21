@@ -1,13 +1,21 @@
-import { BrowserRouter } from 'react-router-dom'
-import Sidebar from './components/Sidebar'
-
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Home from './pages/Home'
+import About from './pages/About'
+import Portfolio from './pages/Portfolio'
+import Posts from './pages/Posts'
+import Post from './components/Post'
 function App () {
   return (
     <>
       <BrowserRouter>
-        <div className='h-screen flex overflow-hidden bg-white'>
-          <Sidebar />
-        </div>
+        <Navbar />
+        <Switch>
+          <Route component={Home} path='/' exact />
+          <Route component={Post} path='/post/:slug' />
+          <Route component={Posts} path='/post' />
+          <Route component={Portfolio} path='/portfolio' />
+        </Switch>
       </BrowserRouter>
     </>
   )
